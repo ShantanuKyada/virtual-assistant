@@ -26,6 +26,7 @@ def insert_questions_and_answer(question,answer):
     query="insert into questionandanswer values('"+question+"','"+answer+"')"
     cur.execute(query)
     con.commit()
+    con.close()
     
     
 
